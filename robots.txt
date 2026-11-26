@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://noseeibatoleins113jp-source.github.io/kiu8249andkoutou/sitemap.xml
