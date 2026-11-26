@@ -1,0 +1,65 @@
+.recruit-hero {
+  padding: 82px 8vw 92px;
+  color: var(--white);
+  background:
+    radial-gradient(circle at 85% 20%, rgba(80,180,161,.2), transparent 35%),
+    linear-gradient(115deg, #102d3a, #174c64);
+}
+.recruit-hero .eyebrow span { background: #64c3b0; }
+.recruit-hero h1 {
+  margin: 0;
+  font-size: clamp(52px, 8vw, 94px);
+  line-height: 1.18;
+  letter-spacing: -.06em;
+}
+.recruit-hero h1 em { color: #70d2bc; font-style: normal; }
+.recruit-hero > p:not(.eyebrow) {
+  margin: 22px 0 30px;
+  color: rgba(255,255,255,.82);
+  font-size: 17px;
+  line-height: 1.9;
+}
+.recruit-roles { background: #f7f7f2; }
+.role-grid {
+  margin-top: 44px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  border-top: 1px solid var(--ink);
+  border-left: 1px solid var(--ink);
+}
+.role-grid article {
+  min-height: 250px;
+  padding: 30px;
+  border-right: 1px solid var(--ink);
+  border-bottom: 1px solid var(--ink);
+}
+.role-grid article > span {
+  color: var(--red);
+  font: 10px "DM Sans", sans-serif;
+  letter-spacing: .16em;
+}
+.role-grid h3 { margin: 44px 0 14px; font-size: 23px; }
+.role-grid p { max-width: 470px; margin: 0; color: #555d60; font-size: 14px; line-height: 2; }
+.recruit-contact { background: #e7e8e1; }
+.recruit-contact-label {
+  margin: 0 0 14px;
+  color: var(--red);
+  font: 10px "DM Sans", sans-serif;
+  font-weight: 700;
+  letter-spacing: .18em;
+}
+.recruit-contact h2 { margin: 0 0 18px; font-size: clamp(32px, 4vw, 48px); }
+.recruit-contact > p:not(.recruit-contact-label) {
+  max-width: 620px;
+  margin: 0 0 24px;
+  color: #4b5559;
+  font-size: 14px;
+  line-height: 2;
+}
+.recruit-back { padding-top: 0; }
+@media (max-width: 700px) {
+  .recruit-hero { padding: 68px 6vw 76px; }
+  .role-grid { grid-template-columns: 1fr; }
+  .role-grid article { min-height: 0; padding: 24px; }
+  .role-grid h3 { margin-top: 28px; }
+}

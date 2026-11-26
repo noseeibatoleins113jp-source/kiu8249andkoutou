@@ -1,0 +1,76 @@
+.links-hero {
+  min-height: 430px;
+  padding: 82px 8vw 92px;
+  color: var(--white);
+  background:
+    radial-gradient(circle at 82% 25%, rgba(80, 180, 161, .2), transparent 34%),
+    linear-gradient(115deg, #102d3a, #174c64);
+}
+.links-hero .eyebrow span { background: #64c3b0; }
+.links-hero h1 {
+  margin: 0;
+  font-size: clamp(52px, 7vw, 84px);
+  line-height: 1.14;
+  letter-spacing: -.06em;
+}
+.links-hero h1 em { color: #70d2bc; font-style: normal; }
+.links-hero > p:not(.eyebrow) {
+  max-width: 650px;
+  margin: 22px 0 0;
+  color: rgba(255,255,255,.82);
+  font-size: 15px;
+  line-height: 2;
+}
+.links-directory { background: #f7f7f2; }
+.account-grid {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  border-top: 1px solid var(--ink);
+  border-left: 1px solid var(--ink);
+}
+.account-grid a {
+  min-width: 0;
+  min-height: 130px;
+  padding: 20px 24px;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-content: center;
+  gap: 5px 14px;
+  border-right: 1px solid var(--ink);
+  border-bottom: 1px solid var(--ink);
+  transition: background .2s ease, color .2s ease;
+}
+.account-grid a:hover { color: var(--white); background: var(--ink); }
+.account-grid a > span {
+  grid-column: 1 / -1;
+  color: var(--red);
+  font: 9px "DM Sans", sans-serif;
+  letter-spacing: .14em;
+}
+.account-grid a strong { font-size: 18px; }
+.account-grid a small { grid-column: 1; color: #646d70; font-size: 11px; }
+.account-grid a:hover small { color: rgba(255,255,255,.72); }
+.account-grid a b { grid-column: 2; grid-row: 2 / 4; align-self: center; font-size: 18px; font-weight: 400; }
+.links-social { color: var(--white); background: var(--ink); }
+.links-social .section-heading-light > p { color: #70d2bc; }
+.links-social .account-grid { border-color: rgba(255,255,255,.55); }
+.links-social .account-grid a { border-color: rgba(255,255,255,.55); }
+.links-social .account-grid a:hover { color: var(--ink); background: #fff; }
+.links-social .account-grid a:hover small { color: #646d70; }
+.links-social .account-grid a > span { color: #70d2bc; }
+.links-creative .account-grid { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
+.links-note {
+  margin: 20px 0 0;
+  color: #656d70;
+  font-size: 11px;
+  line-height: 1.8;
+}
+@media (max-width: 900px) {
+  .links-hero { padding: 72px 6vw 78px; }
+}
+@media (max-width: 600px) {
+  .links-hero { min-height: 0; padding: 64px 6vw 72px; }
+  .links-hero h1 { font-size: 44px; }
+  .account-grid { grid-template-columns: 1fr; }
+}

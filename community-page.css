@@ -1,0 +1,94 @@
+.community-hero {
+  min-height: 430px;
+  padding: 82px 8vw 92px;
+  color: var(--white);
+  background:
+    radial-gradient(circle at 82% 25%, rgba(198, 102, 61, .22), transparent 34%),
+    linear-gradient(115deg, #302a35, #5a3744);
+}
+.community-hero .eyebrow span { background: #e6a174; }
+.community-hero h1 {
+  margin: 0;
+  font-size: clamp(52px, 7vw, 84px);
+  line-height: 1.14;
+  letter-spacing: -.06em;
+}
+.community-hero h1 em { color: #f0ad81; font-style: normal; }
+.community-hero > p:not(.eyebrow) {
+  max-width: 700px;
+  margin: 22px 0 0;
+  color: rgba(255,255,255,.82);
+  font-size: 15px;
+  line-height: 2;
+}
+.community-rules { background: #f7f7f2; }
+.community-intro {
+  max-width: 700px;
+  margin: 24px 0 30px;
+  color: #596164;
+  font-size: 13px;
+  line-height: 1.9;
+}
+.community-rule-list { border-top: 1px solid var(--line); }
+.community-rule-list article {
+  display: grid;
+  grid-template-columns: 90px 1fr;
+  gap: 20px;
+  align-items: start;
+  padding: 22px 4px;
+  border-bottom: 1px solid var(--line);
+}
+.community-rule-list article > span {
+  color: var(--red);
+  font: 700 16px "DM Sans", sans-serif;
+}
+.community-rule-list h3 { margin: 0; font-size: 17px; }
+.community-rule-list p { margin: 8px 0 0; color: #596164; font-size: 12px; line-height: 1.9; }
+.community-moderation { color: var(--white); background: var(--ink); }
+.community-moderation-label {
+  margin: 0 0 14px;
+  color: #70d2bc;
+  font: 700 10px "DM Sans", sans-serif;
+  letter-spacing: .16em;
+}
+.community-moderation h2 { margin: 0; font-size: clamp(28px, 4vw, 42px); }
+.community-moderation > p:last-child {
+  max-width: 720px;
+  margin: 18px 0 0;
+  color: rgba(255,255,255,.75);
+  font-size: 13px;
+  line-height: 2;
+}
+.community-links {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  background: #e7e8e1;
+}
+.community-links > div:first-child > p {
+  margin: 0 0 12px;
+  color: var(--red);
+  font: 700 10px "DM Sans", sans-serif;
+  letter-spacing: .16em;
+}
+.community-links h2 { margin: 0; font-size: clamp(24px, 3vw, 36px); }
+.community-link-list { display: flex; flex-wrap: wrap; gap: 10px; }
+.community-link-list a {
+  display: inline-flex;
+  gap: 12px;
+  padding: 11px 14px;
+  border: 1px solid var(--ink);
+  font-size: 11px;
+  font-weight: 700;
+}
+.community-link-list a:hover { color: var(--white); background: var(--ink); }
+@media (max-width: 900px) {
+  .community-hero { padding: 72px 6vw 78px; }
+  .community-links { align-items: flex-start; flex-direction: column; }
+}
+@media (max-width: 600px) {
+  .community-hero { min-height: 0; padding: 64px 6vw 72px; }
+  .community-hero h1 { font-size: 44px; }
+  .community-rule-list article { grid-template-columns: 50px 1fr; gap: 14px; }
+}

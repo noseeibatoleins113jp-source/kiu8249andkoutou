@@ -1,0 +1,171 @@
+.scenery-hero {
+  min-height: 430px;
+  padding: 82px 8vw 92px;
+  color: var(--white);
+  background:
+    radial-gradient(circle at 82% 25%, rgba(80, 180, 161, .2), transparent 34%),
+    linear-gradient(115deg, #102d3a, #174c64);
+}
+.scenery-hero .eyebrow span { background: #64c3b0; }
+.scenery-hero h1 {
+  margin: 0;
+  font-size: clamp(52px, 7vw, 84px);
+  line-height: 1.14;
+  letter-spacing: -.06em;
+}
+.scenery-hero h1 em { color: #70d2bc; font-style: normal; }
+.scenery-hero > p:not(.eyebrow) {
+  max-width: 650px;
+  margin: 22px 0 0;
+  color: rgba(255,255,255,.82);
+  font-size: 15px;
+  line-height: 2;
+}
+.scenery-section { background: #f7f7f2; }
+.scenery-notice {
+  margin: 24px 0 0;
+  padding: 15px 18px;
+  border-left: 3px solid var(--red);
+  background: #fff;
+  color: #596164;
+  font-size: 12px;
+  line-height: 1.9;
+}
+.scenery-grid {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+.scenery-card { min-width: 0; border: 1px solid var(--ink); background: var(--white); }
+.scenery-art {
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 16 / 9;
+}
+.scenery-sea { background: linear-gradient(#a8d7e5 0 47%, #f7dc9b 47% 50%, #2787a1 50% 100%); }
+.scene-sun {
+  position: absolute;
+  top: 14%;
+  right: 15%;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #f6c973;
+}
+.scene-horizon {
+  position: absolute;
+  left: -5%;
+  right: -5%;
+  bottom: 30%;
+  height: 25%;
+  border-radius: 50% 50% 0 0;
+  background: rgba(53, 141, 151, .45);
+}
+.scene-wave {
+  position: absolute;
+  left: -5%;
+  right: -5%;
+  bottom: -16%;
+  height: 54%;
+  border-radius: 50% 50% 0 0;
+  background: #16748e;
+}
+.scenery-mountain { background: linear-gradient(#badbe0 0 58%, #b4c98c 58% 100%); }
+.scene-mountain-one, .scene-mountain-two {
+  position: absolute;
+  bottom: 22%;
+  width: 62%;
+  height: 72%;
+  clip-path: polygon(50% 0, 100% 100%, 0 100%);
+  background: #668d7b;
+}
+.scene-mountain-one { left: 3%; }
+.scene-mountain-two { right: 2%; height: 58%; background: #87a68a; }
+.scene-forest {
+  position: absolute;
+  left: -5%;
+  right: -5%;
+  bottom: 0;
+  height: 27%;
+  background: linear-gradient(135deg, transparent 0 35%, #456c57 35% 45%, transparent 45%) 0 0 / 54px 100% repeat-x,
+              #6f9169;
+}
+.scenery-river { background: linear-gradient(#c4e0df 0 55%, #8eaf7e 55% 100%); }
+.scene-river {
+  position: absolute;
+  inset: 18% 0 0;
+  clip-path: polygon(48% 0, 67% 0, 54% 37%, 72% 61%, 56% 100%, 28% 100%, 45% 59%, 33% 37%);
+  background: #4a9fb1;
+}
+.scene-bank {
+  position: absolute;
+  inset: 58% 0 0;
+  background: linear-gradient(14deg, #668c64 0 38%, transparent 39%),
+              linear-gradient(-12deg, #7d9c67 0 34%, transparent 35%);
+}
+.scenery-night { background: linear-gradient(#1b2c44 0 63%, #3b4650 63% 100%); }
+.scene-factory {
+  position: absolute;
+  bottom: 22%;
+  background: #293a46;
+  border-top: 4px solid #536a73;
+}
+.scene-factory-one { left: 10%; width: 42%; height: 37%; }
+.scene-factory-two { right: 8%; width: 30%; height: 53%; }
+.scene-factory-two::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: 20%;
+  width: 18%;
+  height: 55%;
+  background: #394b55;
+}
+.scene-lights {
+  position: absolute;
+  inset: 65% 0 0;
+  background: repeating-linear-gradient(90deg, transparent 0 27px, #f3cb78 28px 34px, transparent 35px 52px);
+  opacity: .8;
+  clip-path: polygon(8% 0, 92% 0, 92% 40%, 8% 40%);
+}
+.scenery-copy { padding: 19px 22px 22px; }
+.scenery-copy > p:first-child {
+  margin: 0 0 8px;
+  color: var(--red);
+  font: 700 9px "DM Sans", sans-serif;
+  letter-spacing: .14em;
+}
+.scenery-copy h3 { margin: 0; font-size: 18px; }
+.scenery-copy > p:last-child {
+  margin: 10px 0 0;
+  color: #596164;
+  font-size: 12px;
+  line-height: 1.8;
+}
+.scenery-related { color: var(--white); background: var(--ink); }
+.scenery-related > p {
+  margin: 0 0 14px;
+  color: #70d2bc;
+  font: 700 10px "DM Sans", sans-serif;
+  letter-spacing: .16em;
+}
+.scenery-related h2 { margin: 0; font-size: clamp(30px, 5vw, 48px); }
+.scenery-related-links { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 24px; }
+.scenery-related-links a {
+  display: inline-flex;
+  gap: 14px;
+  padding: 11px 14px;
+  border: 1px solid rgba(255,255,255,.4);
+  font-size: 11px;
+  font-weight: 700;
+}
+.scenery-related-links a:hover { color: var(--ink); background: var(--white); }
+@media (max-width: 900px) {
+  .scenery-hero { padding: 72px 6vw 78px; }
+}
+@media (max-width: 600px) {
+  .scenery-hero { min-height: 0; padding: 64px 6vw 72px; }
+  .scenery-hero h1 { font-size: 44px; }
+  .scenery-grid { grid-template-columns: 1fr; }
+}

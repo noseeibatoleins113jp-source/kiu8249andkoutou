@@ -1,0 +1,76 @@
+.site-terms-hero {
+  min-height: 390px;
+  padding: 82px 8vw 92px;
+  color: var(--white);
+  background:
+    radial-gradient(circle at 82% 25%, rgba(80, 180, 161, .2), transparent 34%),
+    linear-gradient(115deg, #102d3a, #174c64);
+}
+.site-terms-hero .eyebrow span { background: #64c3b0; }
+.site-terms-hero h1 {
+  margin: 0;
+  font-size: clamp(46px, 6vw, 76px);
+  line-height: 1.18;
+  letter-spacing: -.06em;
+}
+.site-terms-hero h1 em { color: #70d2bc; font-style: normal; }
+.site-terms-hero > p:not(.eyebrow) {
+  max-width: 700px;
+  margin: 22px 0 0;
+  color: rgba(255,255,255,.82);
+  font-size: 15px;
+  line-height: 2;
+}
+.site-terms-section { background: #f7f7f2; }
+.site-terms-intro {
+  max-width: 850px;
+  margin: 24px 0;
+  color: #596164;
+  font-size: 13px;
+  line-height: 2;
+}
+.site-terms-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+.site-terms-list article {
+  padding: 24px;
+  border: 1px solid var(--line);
+  background: var(--white);
+}
+.site-terms-list article > span,
+.site-terms-links > p {
+  color: var(--red);
+  font: 700 10px "DM Sans", sans-serif;
+  letter-spacing: .14em;
+}
+.site-terms-list h3 { margin: 12px 0 0; font-size: 17px; }
+.site-terms-list article > p {
+  margin: 12px 0 0;
+  color: #596164;
+  font-size: 12px;
+  line-height: 2;
+}
+.site-terms-list article > p a { color: #1d6b7d; text-decoration: underline; text-underline-offset: 3px; }
+.site-terms-links { color: var(--white); background: var(--ink); }
+.site-terms-links > p { margin: 0 0 12px; color: #70d2bc; }
+.site-terms-links h2 { margin: 0; font-size: clamp(28px, 4vw, 42px); }
+.site-terms-link-list { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 24px; }
+.site-terms-link-list a {
+  display: inline-flex;
+  gap: 12px;
+  padding: 11px 14px;
+  border: 1px solid rgba(255,255,255,.4);
+  font-size: 11px;
+  font-weight: 700;
+}
+.site-terms-link-list a:hover { color: var(--ink); background: var(--white); }
+@media (max-width: 900px) {
+  .site-terms-hero { padding: 72px 6vw 78px; }
+}
+@media (max-width: 640px) {
+  .site-terms-hero { min-height: 0; padding: 64px 6vw 72px; }
+  .site-terms-hero h1 { font-size: 40px; }
+  .site-terms-list { grid-template-columns: 1fr; }
+}

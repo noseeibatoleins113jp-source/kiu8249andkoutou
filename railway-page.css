@@ -1,0 +1,147 @@
+.railway-hero {
+  min-height: 620px;
+  padding: 90px 8vw;
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  overflow: hidden;
+  background: #e8e7df;
+}
+.railway-hero-copy { position: relative; z-index: 1; }
+.railway-hero-copy h1 {
+  margin: 0;
+  font-size: clamp(48px, 6vw, 82px);
+  line-height: 1.2;
+  letter-spacing: -.05em;
+}
+.railway-hero-copy h1 em { color: var(--red); font-style: normal; }
+.railway-hero-copy > p:not(.eyebrow) {
+  margin: 24px 0 30px;
+  color: #4b5559;
+  font-size: 15px;
+  line-height: 2;
+}
+.railway-route-art {
+  position: relative;
+  width: 110%;
+  margin-left: -5%;
+}
+.railway-route-art svg { width: 100%; overflow: visible; }
+.railway-route-shadow, .railway-route-line {
+  fill: none;
+  stroke-linecap: round;
+}
+.railway-route-shadow { stroke: rgba(216,75,51,.12); stroke-width: 25; }
+.railway-route-line {
+  stroke: var(--red);
+  stroke-width: 4;
+  stroke-dasharray: 10 12;
+  animation: routeMove 18s linear infinite;
+}
+.railway-route-art circle { fill: var(--paper); stroke: var(--red); stroke-width: 4; }
+.route-label {
+  position: absolute;
+  color: rgba(16,21,26,.42);
+  font: 9px "DM Sans", sans-serif;
+  letter-spacing: .22em;
+}
+.route-label-one { top: 10%; right: 6%; }
+.route-label-two { bottom: 8%; left: 12%; }
+.railway-hero-number {
+  position: absolute;
+  right: 8vw;
+  bottom: 30px;
+  font: 11px "DM Sans", sans-serif;
+  letter-spacing: .2em;
+  color: #7a7d77;
+}
+
+.railway-intro {
+  display: grid;
+  grid-template-columns: .9fr 1.1fr;
+  gap: 8vw;
+  align-items: center;
+}
+.railway-intro-copy {
+  padding-left: 28px;
+  border-left: 2px solid var(--red);
+}
+.railway-intro-copy p {
+  margin: 0 0 16px;
+  color: #4b5559;
+  font-size: 15px;
+  line-height: 2.1;
+}
+.railway-intro-copy p:last-child { margin-bottom: 0; }
+
+.railway-elements { background: var(--ink); color: var(--white); }
+.railway-elements .section-heading > p { color: #ef806d; }
+.railway-element-grid {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  border-top: 1px solid rgba(255,255,255,.3);
+  border-left: 1px solid rgba(255,255,255,.3);
+}
+.railway-element-grid article {
+  min-height: 250px;
+  padding: 26px;
+  border-right: 1px solid rgba(255,255,255,.3);
+  border-bottom: 1px solid rgba(255,255,255,.3);
+}
+.railway-element-grid article > span {
+  color: #ef806d;
+  font: 10px "DM Sans", sans-serif;
+  letter-spacing: .16em;
+}
+.railway-element-grid h3 { margin: 36px 0 12px; font-size: 21px; }
+.railway-element-grid p { min-height: 52px; margin: 0 0 20px; color: rgba(255,255,255,.68); font-size: 13px; line-height: 1.9; }
+.railway-element-grid b {
+  display: inline-block;
+  padding: 6px 10px;
+  border: 1px solid rgba(255,255,255,.35);
+  font: 9px "DM Sans", sans-serif;
+  letter-spacing: .12em;
+}
+.railway-studio-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 10px;
+  border: 1px solid rgba(255,255,255,.55);
+  color: var(--white);
+  font-size: 11px;
+  font-weight: 700;
+}
+.railway-studio-link:hover { background: rgba(255,255,255,.12); }
+.railway-scenery-link { display: block; width: fit-content; margin-top: 20px; }
+
+.railway-related { background: #e7e8e1; }
+.railway-related > p:first-child {
+  margin: 0 0 18px;
+  color: var(--red);
+  font: 10px "DM Sans", sans-serif;
+  font-weight: 700;
+  letter-spacing: .18em;
+}
+.railway-related h2 { margin: 0 0 18px; font-size: clamp(42px, 6vw, 76px); line-height: 1.1; }
+.railway-related > p:not(:first-child) { max-width: 520px; margin: 0 0 26px; color: #4b5559; font-size: 14px; line-height: 2; }
+.railway-back { padding-top: 0; }
+
+@media (max-width: 900px) {
+  .railway-hero { grid-template-columns: 1fr; gap: 30px; padding: 75px 6vw; }
+  .railway-route-art { width: 100%; margin: 0; }
+  .railway-intro { grid-template-columns: 1fr; gap: 32px; }
+}
+@media (max-width: 560px) {
+  .railway-hero { min-height: 0; padding: 70px 6vw 85px; }
+  .railway-hero-copy h1 { font-size: 48px; }
+  .railway-element-grid { grid-template-columns: 1fr; }
+  .railway-element-grid article { min-height: 0; }
+  .railway-element-grid h3 { margin-top: 22px; }
+  .railway-element-grid p { min-height: 0; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .railway-route-line { animation: none; }
+}

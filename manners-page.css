@@ -1,0 +1,84 @@
+.manners-hero {
+  min-height: 430px;
+  padding: 82px 8vw 92px;
+  color: var(--white);
+  background:
+    radial-gradient(circle at 82% 25%, rgba(80, 180, 161, .2), transparent 34%),
+    linear-gradient(115deg, #102d3a, #174c64);
+}
+.manners-hero .eyebrow span { background: #64c3b0; }
+.manners-hero h1 {
+  margin: 0;
+  font-size: clamp(52px, 7vw, 84px);
+  line-height: 1.14;
+  letter-spacing: -.06em;
+}
+.manners-hero h1 em { color: #70d2bc; font-style: normal; }
+.manners-hero > p:not(.eyebrow) {
+  max-width: 650px;
+  margin: 22px 0 0;
+  color: rgba(255,255,255,.82);
+  font-size: 15px;
+  line-height: 2;
+}
+.manners-section { background: #f7f7f2; }
+.manners-notice {
+  max-width: 900px;
+  margin: 25px 0 32px;
+  padding: 15px 18px;
+  border-left: 3px solid var(--red);
+  background: #fff;
+  color: #596164;
+  font-size: 12px;
+  line-height: 1.9;
+}
+.manners-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  border-top: 1px solid var(--ink);
+  border-left: 1px solid var(--ink);
+}
+.manners-grid article {
+  min-height: 190px;
+  padding: 24px;
+  border-right: 1px solid var(--ink);
+  border-bottom: 1px solid var(--ink);
+}
+.manners-grid article > span {
+  color: var(--red);
+  font: 700 9px "DM Sans", sans-serif;
+  letter-spacing: .14em;
+}
+.manners-grid h3 { margin: 21px 0 8px; font-size: 17px; }
+.manners-grid p { margin: 0; color: #596164; font-size: 12px; line-height: 1.9; }
+.manners-footer { color: var(--white); background: var(--ink); }
+.manners-footer > p {
+  margin: 0 0 14px;
+  color: #70d2bc;
+  font: 700 10px "DM Sans", sans-serif;
+  letter-spacing: .16em;
+}
+.manners-footer h2 {
+  margin: 0;
+  font-size: clamp(30px, 5vw, 48px);
+  line-height: 1.35;
+}
+.manners-links { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 24px; }
+.manners-links a {
+  display: inline-flex;
+  gap: 14px;
+  padding: 11px 14px;
+  border: 1px solid rgba(255,255,255,.4);
+  font-size: 11px;
+  font-weight: 700;
+}
+.manners-links a:hover { color: var(--ink); background: var(--white); }
+@media (max-width: 900px) {
+  .manners-hero { padding: 72px 6vw 78px; }
+}
+@media (max-width: 600px) {
+  .manners-hero { min-height: 0; padding: 64px 6vw 72px; }
+  .manners-hero h1 { font-size: 44px; }
+  .manners-grid { grid-template-columns: 1fr; }
+  .manners-grid article { min-height: 0; padding: 22px; }
+}

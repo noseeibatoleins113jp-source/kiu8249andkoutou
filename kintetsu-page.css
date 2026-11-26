@@ -1,0 +1,82 @@
+.kintetsu-hero {
+  min-height: 430px;
+  padding: 82px 8vw 92px;
+  color: var(--white);
+  background:
+    radial-gradient(circle at 82% 25%, rgba(80, 180, 161, .2), transparent 34%),
+    linear-gradient(115deg, #102d3a, #174c64);
+}
+.kintetsu-hero .eyebrow span { background: #64c3b0; }
+.kintetsu-hero h1 {
+  margin: 0;
+  font-size: clamp(52px, 7vw, 84px);
+  line-height: 1.14;
+  letter-spacing: -.06em;
+}
+.kintetsu-hero h1 em { color: #70d2bc; font-style: normal; }
+.kintetsu-hero > p:not(.eyebrow) {
+  max-width: 700px;
+  margin: 22px 0 28px;
+  color: rgba(255,255,255,.82);
+  font-size: 15px;
+  line-height: 2;
+}
+.kintetsu-info { background: #f7f7f2; }
+.kintetsu-note {
+  margin: 22px 0 30px;
+  color: #596164;
+  font-size: 12px;
+  line-height: 1.9;
+}
+.kintetsu-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  border-top: 1px solid var(--ink);
+  border-left: 1px solid var(--ink);
+}
+.kintetsu-grid a {
+  min-width: 0;
+  min-height: 118px;
+  padding: 19px 22px;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-content: center;
+  gap: 5px 14px;
+  border-right: 1px solid var(--ink);
+  border-bottom: 1px solid var(--ink);
+  transition: background .2s ease, color .2s ease;
+}
+.kintetsu-grid a:hover { color: var(--white); background: var(--ink); }
+.kintetsu-grid a > span {
+  grid-column: 1 / -1;
+  color: var(--red);
+  font: 700 9px "DM Sans", sans-serif;
+  letter-spacing: .14em;
+}
+.kintetsu-grid strong { font-size: 16px; }
+.kintetsu-grid small { grid-column: 1; color: #646d70; font-size: 11px; }
+.kintetsu-grid a:hover small { color: rgba(255,255,255,.72); }
+.kintetsu-grid b { grid-column: 2; grid-row: 2 / 4; align-self: center; font-size: 18px; font-weight: 400; }
+.kintetsu-disclaimer { color: var(--white); background: var(--ink); }
+.kintetsu-disclaimer > p:first-child {
+  margin: 0 0 14px;
+  color: #70d2bc;
+  font: 700 10px "DM Sans", sans-serif;
+  letter-spacing: .16em;
+}
+.kintetsu-disclaimer h2 { margin: 0; font-size: clamp(28px, 4vw, 42px); }
+.kintetsu-disclaimer > p:last-child {
+  max-width: 850px;
+  margin: 18px 0 0;
+  color: rgba(255,255,255,.75);
+  font-size: 13px;
+  line-height: 2;
+}
+@media (max-width: 900px) {
+  .kintetsu-hero { padding: 72px 6vw 78px; }
+}
+@media (max-width: 600px) {
+  .kintetsu-hero { min-height: 0; padding: 64px 6vw 72px; }
+  .kintetsu-hero h1 { font-size: 44px; }
+  .kintetsu-grid { grid-template-columns: 1fr; }
+}

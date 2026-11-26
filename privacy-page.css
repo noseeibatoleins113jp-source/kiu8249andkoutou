@@ -1,0 +1,77 @@
+.privacy-hero {
+  min-height: 430px;
+  padding: 82px 8vw 92px;
+  color: var(--white);
+  background:
+    radial-gradient(circle at 84% 22%, rgba(80,180,161,.2), transparent 34%),
+    linear-gradient(115deg, #102d3a, #174c64);
+}
+.privacy-hero .eyebrow span { background: #64c3b0; }
+.privacy-hero h1 {
+  margin: 0;
+  font-size: clamp(52px, 7vw, 84px);
+  line-height: 1.14;
+  letter-spacing: -.06em;
+}
+.privacy-hero h1 em { color: #70d2bc; font-style: normal; }
+.privacy-hero > p:not(.eyebrow) {
+  max-width: 650px;
+  margin: 22px 0 0;
+  color: rgba(255,255,255,.82);
+  font-size: 15px;
+  line-height: 2;
+}
+.privacy-section { background: #f7f7f2; }
+.privacy-blocks { margin-top: 40px; border-top: 1px solid var(--line); }
+.privacy-blocks article {
+  display: grid;
+  grid-template-columns: 190px 230px 1fr;
+  align-items: start;
+  gap: 20px;
+  padding: 24px 0;
+  border-bottom: 1px solid var(--line);
+}
+.privacy-blocks article > span {
+  color: var(--red);
+  font: 700 9px "DM Sans", sans-serif;
+  letter-spacing: .14em;
+}
+.privacy-blocks h3 { margin: 0; font-size: 16px; }
+.privacy-blocks p { margin: 0; color: #555d60; font-size: 12px; line-height: 1.9; }
+.site-guide { color: var(--white); background: var(--ink); }
+.site-guide .section-heading-light > p { color: #70d2bc; }
+.site-guide-copy {
+  max-width: 850px;
+  margin-top: 32px;
+  color: rgba(255,255,255,.76);
+  font-size: 13px;
+  line-height: 2;
+}
+.site-guide-copy p { margin: 0 0 14px; }
+.site-guide-copy p:last-child { margin-bottom: 0; }
+.site-guide-links {
+  margin-top: 28px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+.site-guide-links a {
+  display: inline-flex;
+  gap: 22px;
+  padding: 11px 14px;
+  border: 1px solid rgba(255,255,255,.35);
+  font-size: 11px;
+  font-weight: 700;
+}
+.site-guide-links a:hover { color: #70d2bc; border-color: #70d2bc; }
+@media (max-width: 900px) {
+  .privacy-hero { padding: 72px 6vw 78px; }
+  .privacy-blocks article { grid-template-columns: 160px 1fr; }
+  .privacy-blocks p { grid-column: 2; }
+}
+@media (max-width: 560px) {
+  .privacy-hero { min-height: 0; padding: 64px 6vw 72px; }
+  .privacy-hero h1 { font-size: 44px; }
+  .privacy-blocks article { grid-template-columns: 1fr; gap: 10px; }
+  .privacy-blocks p { grid-column: auto; }
+}

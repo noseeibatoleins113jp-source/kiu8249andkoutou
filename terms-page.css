@@ -1,0 +1,84 @@
+.terms-hero {
+  min-height: 430px;
+  padding: 82px 8vw 92px;
+  color: var(--white);
+  background:
+    radial-gradient(circle at 82% 25%, rgba(198, 102, 61, .22), transparent 34%),
+    linear-gradient(115deg, #302a35, #5a3744);
+}
+.terms-hero .eyebrow span { background: #e6a174; }
+.terms-hero h1 {
+  margin: 0;
+  font-size: clamp(52px, 7vw, 84px);
+  line-height: 1.14;
+  letter-spacing: -.06em;
+}
+.terms-hero h1 em { color: #f0ad81; font-style: normal; }
+.terms-hero > p:not(.eyebrow) {
+  max-width: 650px;
+  margin: 22px 0 0;
+  color: rgba(255,255,255,.82);
+  font-size: 15px;
+  line-height: 2;
+}
+.terms-section { background: #f7f7f2; }
+.terms-notice {
+  margin: 0 0 54px;
+  padding: 16px 20px;
+  border-left: 3px solid var(--red);
+  background: #fff;
+  color: #565d60;
+  font-size: 12px;
+  line-height: 1.9;
+}
+.terms-category + .terms-category { margin-top: 68px; }
+.term-list {
+  margin: 32px 0 0;
+  border-top: 1px solid var(--line);
+}
+.term-list > div {
+  display: grid;
+  grid-template-columns: minmax(150px, 220px) 1fr;
+  gap: 30px;
+  padding: 22px 4px;
+  border-bottom: 1px solid var(--line);
+}
+.term-list dt { font-size: 16px; font-weight: 800; }
+.term-list dd {
+  margin: 0;
+  color: #555d60;
+  font-size: 12px;
+  line-height: 1.95;
+}
+.term-list dd a {
+  display: inline-block;
+  margin-left: 8px;
+  color: var(--red);
+  font-weight: 700;
+  white-space: nowrap;
+}
+.term-list dd a:hover { text-decoration: underline; }
+.terms-footer { color: var(--white); background: var(--ink); }
+.terms-footer > p {
+  margin: 0 0 16px;
+  color: #e6a174;
+  font: 700 10px "DM Sans", sans-serif;
+  letter-spacing: .16em;
+}
+.terms-footer h2 {
+  margin: 0 0 28px;
+  font-size: clamp(32px, 5vw, 52px);
+  line-height: 1.35;
+  letter-spacing: -.04em;
+}
+@media (max-width: 900px) {
+  .terms-hero { padding: 72px 6vw 78px; }
+  .term-list > div { grid-template-columns: 150px 1fr; gap: 20px; }
+}
+@media (max-width: 560px) {
+  .terms-hero { min-height: 0; padding: 64px 6vw 72px; }
+  .terms-hero h1 { font-size: 44px; }
+  .terms-notice { margin-bottom: 42px; }
+  .terms-category + .terms-category { margin-top: 54px; }
+  .term-list > div { grid-template-columns: 1fr; gap: 8px; padding: 18px 2px; }
+}

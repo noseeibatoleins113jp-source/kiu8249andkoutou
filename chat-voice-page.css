@@ -1,0 +1,66 @@
+.voice-hero {
+  min-height: 390px;
+  padding: 82px 8vw 92px;
+  color: var(--white);
+  background:
+    radial-gradient(circle at 82% 25%, rgba(80, 180, 161, .2), transparent 34%),
+    linear-gradient(115deg, #102d3a, #174c64);
+}
+.voice-hero .eyebrow span { background: #64c3b0; }
+.voice-hero h1 {
+  margin: 0;
+  font-size: clamp(52px, 7vw, 84px);
+  line-height: 1.14;
+  letter-spacing: -.06em;
+}
+.voice-hero h1 em { color: #70d2bc; font-style: normal; }
+.voice-hero > p:not(.eyebrow) {
+  max-width: 700px;
+  margin: 22px 0 0;
+  color: rgba(255,255,255,.82);
+  font-size: 15px;
+  line-height: 2;
+}
+.voice-demo-section { background: #f7f7f2; }
+.voice-instructions {
+  max-width: 850px;
+  margin: 32px auto 0;
+  padding: 22px;
+  border: 1px solid var(--ink);
+  background: var(--white);
+}
+.voice-demo-notice {
+  padding: 14px 16px;
+  border-left: 3px solid var(--red);
+  background: #f7f7f2;
+}
+.voice-demo-notice strong { font-size: 13px; }
+.voice-demo-notice p { margin: 6px 0 0; color: #596164; font-size: 11px; line-height: 1.8; }
+.voice-steps { margin: 22px 0; padding-left: 22px; color: #334247; font-size: 13px; line-height: 2; }
+.voice-steps li + li { margin-top: 7px; }
+.voice-privacy-note { margin: 16px 0 0; color: #656d70; font-size: 10px; line-height: 1.9; }
+.voice-privacy-note a { color: var(--red); text-decoration: underline; }
+.voice-info { color: var(--white); background: var(--ink); }
+.voice-info > p:first-child {
+  margin: 0 0 14px;
+  color: #70d2bc;
+  font: 700 10px "DM Sans", sans-serif;
+  letter-spacing: .16em;
+}
+.voice-info h2 { margin: 0; font-size: clamp(28px, 4vw, 42px); }
+.voice-info > p:not(:first-child) {
+  max-width: 850px;
+  margin: 18px 0 20px;
+  color: rgba(255,255,255,.76);
+  font-size: 13px;
+  line-height: 2;
+}
+.voice-info .text-link { border-color: rgba(255,255,255,.7); }
+@media (max-width: 900px) {
+  .voice-hero { padding: 72px 6vw 78px; }
+}
+@media (max-width: 600px) {
+  .voice-hero { min-height: 0; padding: 64px 6vw 72px; }
+  .voice-hero h1 { font-size: 44px; }
+  .voice-instructions { padding: 15px; }
+}

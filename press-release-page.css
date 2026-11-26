@@ -1,0 +1,75 @@
+.press-release-hero {
+  min-height: 390px;
+  padding: 82px 8vw 92px;
+  color: var(--white);
+  background:
+    radial-gradient(circle at 82% 25%, rgba(80, 180, 161, .2), transparent 34%),
+    linear-gradient(115deg, #102d3a, #174c64);
+}
+.press-release-hero .eyebrow span { background: #64c3b0; }
+.press-release-hero h1 {
+  margin: 0;
+  font-size: clamp(52px, 7vw, 84px);
+  line-height: 1.14;
+  letter-spacing: -.06em;
+}
+.press-release-hero h1 em { color: #70d2bc; font-style: normal; }
+.press-release-hero > p:not(.eyebrow) {
+  max-width: 700px;
+  margin: 22px 0 0;
+  color: rgba(255,255,255,.82);
+  font-size: 15px;
+  line-height: 2;
+}
+.press-release-section { background: #f7f7f2; }
+.press-release-empty {
+  max-width: 900px;
+  margin-top: 28px;
+  padding: clamp(24px, 5vw, 48px);
+  border: 1px solid var(--line);
+  background: var(--white);
+}
+.press-release-empty > span,
+.press-release-about > p:first-child {
+  color: var(--red);
+  font: 700 10px "DM Sans", sans-serif;
+  letter-spacing: .16em;
+}
+.press-release-empty h3 {
+  margin: 16px 0 0;
+  font-size: clamp(21px, 3vw, 30px);
+}
+.press-release-empty p {
+  max-width: 700px;
+  margin: 14px 0 0;
+  color: #596164;
+  font-size: 13px;
+  line-height: 2;
+}
+.press-release-about { color: var(--white); background: var(--ink); }
+.press-release-about > p:first-child { margin: 0 0 12px; color: #70d2bc; }
+.press-release-about h2 { margin: 0; font-size: clamp(28px, 4vw, 42px); }
+.press-release-about > p:not(:first-child) {
+  max-width: 850px;
+  margin: 18px 0 0;
+  color: rgba(255,255,255,.76);
+  font-size: 13px;
+  line-height: 2;
+}
+.press-release-links { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 24px; }
+.press-release-links a {
+  display: inline-flex;
+  gap: 12px;
+  padding: 11px 14px;
+  border: 1px solid rgba(255,255,255,.4);
+  font-size: 11px;
+  font-weight: 700;
+}
+.press-release-links a:hover { color: var(--ink); background: var(--white); }
+@media (max-width: 900px) {
+  .press-release-hero { padding: 72px 6vw 78px; }
+}
+@media (max-width: 600px) {
+  .press-release-hero { min-height: 0; padding: 64px 6vw 72px; }
+  .press-release-hero h1 { font-size: 44px; }
+}

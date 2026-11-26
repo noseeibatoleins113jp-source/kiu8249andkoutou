@@ -1,0 +1,78 @@
+.delay-hero {
+  min-height: 390px;
+  padding: 82px 8vw 92px;
+  color: var(--white);
+  background:
+    radial-gradient(circle at 82% 25%, rgba(80, 180, 161, .2), transparent 34%),
+    linear-gradient(115deg, #102d3a, #174c64);
+}
+.delay-hero .eyebrow span { background: #64c3b0; }
+.delay-hero h1 {
+  margin: 0;
+  font-size: clamp(52px, 7vw, 84px);
+  line-height: 1.14;
+  letter-spacing: -.06em;
+}
+.delay-hero h1 em { color: #70d2bc; font-style: normal; }
+.delay-hero > p:not(.eyebrow) {
+  max-width: 700px;
+  margin: 22px 0 0;
+  color: rgba(255,255,255,.82);
+  font-size: 15px;
+  line-height: 2;
+}
+.delay-status { background: #f7f7f2; }
+.delay-status-card {
+  margin-top: 30px;
+  padding: 26px;
+  border: 1px solid var(--ink);
+  background: var(--white);
+}
+.delay-status-card > span {
+  color: var(--red);
+  font: 700 9px "DM Sans", sans-serif;
+  letter-spacing: .16em;
+}
+.delay-status-card h3 { margin: 17px 0 9px; font-size: 19px; }
+.delay-status-card p { margin: 0; color: #596164; font-size: 12px; line-height: 1.9; }
+.delay-real { color: var(--white); background: var(--ink); }
+.delay-real .section-heading-light > p { color: #70d2bc; }
+.delay-real-copy {
+  max-width: 850px;
+  margin: 25px 0 22px;
+  color: rgba(255,255,255,.78);
+  font-size: 13px;
+  line-height: 2;
+}
+.delay-real-note {
+  margin: 18px 0 0;
+  color: rgba(255,255,255,.62);
+  font-size: 11px;
+  line-height: 1.9;
+}
+.delay-links { background: #e7e8e1; }
+.delay-links > p {
+  margin: 0 0 14px;
+  color: var(--red);
+  font: 700 10px "DM Sans", sans-serif;
+  letter-spacing: .16em;
+}
+.delay-links h2 { margin: 0; font-size: clamp(28px, 4vw, 42px); }
+.delay-link-list { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 22px; }
+.delay-link-list a {
+  display: inline-flex;
+  gap: 12px;
+  padding: 11px 14px;
+  border: 1px solid var(--ink);
+  font-size: 11px;
+  font-weight: 700;
+}
+.delay-link-list a:hover { color: var(--white); background: var(--ink); }
+@media (max-width: 900px) {
+  .delay-hero { padding: 72px 6vw 78px; }
+}
+@media (max-width: 600px) {
+  .delay-hero { min-height: 0; padding: 64px 6vw 72px; }
+  .delay-hero h1 { font-size: 44px; }
+  .delay-status-card { padding: 22px 18px; }
+}

@@ -1,0 +1,81 @@
+.faq-hero {
+  min-height: 470px;
+  padding: 82px 8vw 92px;
+  color: var(--white);
+  background:
+    radial-gradient(circle at 84% 22%, rgba(80,180,161,.2), transparent 34%),
+    linear-gradient(115deg, #102d3a, #174c64);
+}
+.faq-hero .eyebrow span { background: #64c3b0; }
+.faq-hero h1 {
+  margin: 0;
+  font-size: clamp(56px, 8vw, 96px);
+  line-height: 1.12;
+  letter-spacing: -.06em;
+}
+.faq-hero h1 em { color: #70d2bc; font-style: normal; }
+.faq-hero > p:not(.eyebrow) {
+  max-width: 650px;
+  margin: 22px 0 0;
+  color: rgba(255,255,255,.82);
+  font-size: 15px;
+  line-height: 2;
+}
+.faq-list { background: #f7f7f2; }
+.faq-note { margin: 18px 0 30px; color: #60696b; font-size: 12px; line-height: 1.8; }
+.faq-items { border-top: 1px solid var(--line); }
+.faq-item { border-bottom: 1px solid var(--line); }
+.faq-item summary {
+  display: grid;
+  grid-template-columns: 30px 1fr 30px;
+  align-items: center;
+  gap: 14px;
+  min-height: 74px;
+  cursor: pointer;
+  list-style: none;
+  font-size: 14px;
+  font-weight: 700;
+}
+.faq-item summary::-webkit-details-marker { display: none; }
+.faq-item summary > span {
+  color: var(--red);
+  font: 700 12px "DM Sans", sans-serif;
+}
+.faq-item summary > b {
+  width: 28px;
+  height: 28px;
+  display: grid;
+  place-items: center;
+  border: 1px solid var(--line);
+  border-radius: 50%;
+  font-size: 18px;
+  font-weight: 400;
+  transition: transform .2s ease;
+}
+.faq-item[open] summary > b { transform: rotate(45deg); }
+.faq-answer {
+  padding: 0 44px 24px;
+  color: #4b5559;
+  font-size: 13px;
+  line-height: 1.9;
+}
+.faq-answer p { max-width: 760px; margin: 0 0 12px; }
+.faq-answer a { display: inline-flex; gap: 10px; color: var(--red); font-size: 12px; font-weight: 700; }
+.faq-contact { background: #e7e8e1; }
+.faq-contact-label {
+  margin: 0 0 14px;
+  color: var(--red);
+  font: 700 10px "DM Sans", sans-serif;
+  letter-spacing: .18em;
+}
+.faq-contact h2 { margin: 0 0 22px; font-size: clamp(36px, 5vw, 58px); }
+.faq-contact .button span { margin-left: 18px; }
+@media (max-width: 900px) {
+  .faq-hero { padding: 72px 6vw 78px; }
+}
+@media (max-width: 560px) {
+  .faq-hero { min-height: 0; padding: 64px 6vw 72px; }
+  .faq-hero h1 { font-size: 48px; }
+  .faq-item summary { grid-template-columns: 24px 1fr 28px; gap: 10px; font-size: 13px; }
+  .faq-answer { padding: 0 34px 22px; }
+}

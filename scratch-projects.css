@@ -1,0 +1,85 @@
+.scratch-hero {
+  padding: 82px 8vw 92px;
+  color: var(--white);
+  background:
+    radial-gradient(circle at 85% 20%, rgba(80,180,161,.2), transparent 35%),
+    linear-gradient(115deg, #102d3a, #174c64);
+}
+.scratch-hero .eyebrow span { background: #64c3b0; }
+.scratch-hero h1 {
+  margin: 0;
+  font-size: clamp(56px, 8vw, 100px);
+  line-height: 1.12;
+  letter-spacing: -.06em;
+}
+.scratch-hero h1 em { color: #70d2bc; font-style: normal; }
+.scratch-hero > p:not(.eyebrow) { margin: 20px 0 28px; color: rgba(255,255,255,.82); font-size: 15px; }
+.scratch-project-list { background: #f7f7f2; }
+.scratch-project-grid {
+  margin-top: 44px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+.scratch-project-card {
+  overflow: hidden;
+  border: 1px solid var(--line);
+  background: #fff;
+}
+.scratch-project-image {
+  aspect-ratio: 4 / 3;
+  display: grid;
+  place-items: center;
+  position: relative;
+  overflow: hidden;
+  background: #e7e8e1;
+}
+.scratch-project-image img { display: block; width: 100%; height: 100%; object-fit: cover; transition: transform .3s ease; }
+.scratch-project-image:hover img { transform: scale(1.035); }
+.scratch-project-image > span {
+  position: absolute;
+  right: 14px;
+  bottom: 14px;
+  width: 38px;
+  height: 38px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: var(--ink);
+  color: #fff;
+}
+.scratch-project-copy { padding: 25px; }
+.scratch-project-copy > p:first-child {
+  margin: 0 0 10px;
+  color: var(--red);
+  font: 9px "DM Sans", sans-serif;
+  font-weight: 700;
+  letter-spacing: .16em;
+}
+.scratch-project-copy h3 { margin: 0 0 12px; font-size: 21px; }
+.scratch-project-copy h3 a:hover { color: var(--red); }
+.scratch-project-copy h3 + p { min-height: 50px; margin: 0 0 20px; color: #555d60; font-size: 13px; line-height: 1.9; }
+.scratch-project-button {
+  display: inline-flex;
+  gap: 18px;
+  padding: 10px 13px;
+  background: var(--ink);
+  color: #fff;
+  font-size: 11px;
+  font-weight: 700;
+}
+.scratch-project-button:hover { background: var(--red); }
+.scratch-profile-link { background: #e7e8e1; }
+.scratch-profile-link > p {
+  margin: 0 0 14px;
+  color: var(--red);
+  font: 10px "DM Sans", sans-serif;
+  font-weight: 700;
+  letter-spacing: .16em;
+}
+.scratch-profile-link h2 { margin: 0 0 22px; font: 700 clamp(26px, 4vw, 42px) "DM Sans", sans-serif; }
+@media (max-width: 700px) {
+  .scratch-hero { padding: 68px 6vw 76px; }
+  .scratch-project-grid { grid-template-columns: 1fr; }
+  .scratch-project-copy h3 + p { min-height: 0; }
+}
